@@ -1,4 +1,4 @@
-name: Destruir Repo ECR Lambda
+name: Destruir Repo ECR WebApi
 on:
     workflow_dispatch:
 jobs:
