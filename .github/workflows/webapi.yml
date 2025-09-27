@@ -1,4 +1,4 @@
-name: Build e Publicacao AWS ECR
+name: Compilar e Enviar para ECR
 on:
     push:
         branches:

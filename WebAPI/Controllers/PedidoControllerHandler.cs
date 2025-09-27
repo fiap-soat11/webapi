@@ -5,10 +5,12 @@ using Application.Configurations;
 using Adapters.Controllers.Interfaces;
 using WebAPI.Mappers;
 using Adapters.Presenters.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebAPI.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class PedidoControllerHandler : ControllerBase
     {
