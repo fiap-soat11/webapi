@@ -1,10 +1,12 @@
 ﻿using Adapters.Controllers.Interfaces;
 using Adapters.Presenters.QRCode;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class PagamentoControllerHandler : ControllerBase
     {

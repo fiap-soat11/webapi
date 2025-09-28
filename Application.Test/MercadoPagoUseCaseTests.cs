@@ -22,7 +22,7 @@ namespace Tests
                 .AddInMemoryCollection(configData)
                 .Build();
 
-            _useCase = new MercadoPagoUseCase(configuration);
+            //_useCase = new MercadoPagoUseCase(configuration);
         }
 
         [TestMethod]

@@ -4,10 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 using Adapters.Presenters.Cliente;
 using WebAPI.Mappers;
 using Adapters.Controllers.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebAPI.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/Cliente")]
 public class ClienteControllerHandler : ControllerBase
 {

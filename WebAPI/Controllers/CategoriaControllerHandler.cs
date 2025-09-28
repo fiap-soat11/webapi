@@ -1,11 +1,13 @@
 using Adapters.Controllers.Interfaces;
 using Adapters.Presenters.Categoria;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI.Mappers;
 
 namespace WebAPI.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class CategoriaControllerHandler : ControllerBase
     {
