@@ -4,10 +4,12 @@ using Adapters.Presenters.Cliente;
 using Adapters.Controllers.Interfaces;
 using Adapters.Presenters.Categoria;
 using Adapters.Presenters.Produto;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebAPI.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/Produto")]
 public class ProdutoControllerHandler : ControllerBase
 {

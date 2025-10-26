@@ -2,12 +2,14 @@
 using Adapters.Presenters.Pedido;
 using Adapters.Presenters.QRCode;
 using Application.UseCases;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
 namespace WebAPI.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class QRCodeControllerHandler : ControllerBase
     {
